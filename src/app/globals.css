@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Our own dark theme. Colors are taken from the Figma design. */
+@plugin "daisyui/theme" {
+  name: "fitlog";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #0f1115;
+  --color-base-200: #15171d;
+  --color-base-300: #222630;
+  --color-base-content: #ffffff;
+  --color-primary: #ccff00;
+  --color-primary-content: #000000;
+  --color-secondary: #222630;
+  --color-secondary-content: #ffffff;
+  --color-accent: #c2f800;
+  --color-accent-content: #000000;
+  --color-neutral: #222630;
+  --color-neutral-content: #d1d5db;
+  --color-info: #38bdf8;
+  --color-info-content: #000000;
+  --color-success: #4ade80;
+  --color-success-content: #000000;
+  --color-warning: #facc15;
+  --color-warning-content: #000000;
+  --color-error: #f87171;
+  --color-error-content: #000000;
+  --radius-selector: 1rem;
+  --radius-field: 0.75rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* Fonts from the design: Oswald for headings, Inter for text */
+@theme inline {
+  --font-display: var(--font-oswald), sans-serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+html { scroll-behavior: smooth; }
